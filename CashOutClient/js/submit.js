@@ -20,6 +20,10 @@ $(document).ready(function () {
             window.location.replace(url)
         }
     })
+
+    $('.home').click(function() {
+        window.location.replace('./index.html')
+    })
 })
 
 function GetURLParameter(sParam)

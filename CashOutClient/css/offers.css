@@ -17,7 +17,15 @@ body {
    background-color: black;
    display: flex;
    flex-direction: row;
-   justify-content: flex-start;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.home {
+   color: #444444;
+   font-size: 2em;
+   padding-right: 1vw;
+   cursor: pointer;
 }
 
 .header-img {

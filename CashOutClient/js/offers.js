@@ -25,7 +25,9 @@ $(document).ready(function () {
             }
         }
     })
-
+    $('.home').click(function() {
+        window.location.replace('./index.html')
+    })
     $(document).click(function (event) {
         if (event.target == $('.modal')) {
             $('.modal').style.display = 'none'
