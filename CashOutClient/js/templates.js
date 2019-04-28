@@ -4,7 +4,7 @@ templates['offer'] = template({"compiler":[7,">= 4.0.0"],"main":function(contain
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "<div class=\"offer\">\n    <div class=\"user\">\n        <img class=\"user-img\" src=\"img/fake-profile.png\"/>\n        <div class=\"username\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.user_id : stack1), depth0))
+    + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.user : stack1)) != null ? stack1.username : stack1), depth0))
     + "</div>\n    </div>\n    <div class=\"cash_amt\">Cash: "
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.cash_amt : stack1), depth0))
     + "</div>\n    <div class=\"venmo_amt\">Venmo: "
@@ -18,7 +18,7 @@ templates['offers'] = template({"1":function(container,depth0,helpers,partials,d
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<div class=\"title\"></div>\n"
+  return "<div class=\"title\"></div>\n<div class=\"modal\">\n    <div class=\"modal-content\">\n        <div class=\"text\">Are you sure you want to select this offer?</div>\n        <div class=\"btns\">\n            <div id=\"yes-btn\" class=\"btn\">Yes</div>\n            <div id=\"no-btn\" class=\"btn\">No</div>\n        </div>\n    </div>\n</div>\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.offers : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
 })();

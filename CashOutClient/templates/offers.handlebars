@@ -1,4 +1,13 @@
 <div class="title"></div>
+<div class="modal">
+    <div class="modal-content">
+        <div class="text">Are you sure you want to select this offer?</div>
+        <div class="btns">
+            <div id="yes-btn" class="btn">Yes</div>
+            <div id="no-btn" class="btn">No</div>
+        </div>
+    </div>
+</div>
 {{#each offers}}
     {{> offer offer=this}}
 {{/each}}

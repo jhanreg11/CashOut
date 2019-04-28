@@ -37,6 +37,7 @@ body {
    border-bottom-style: solid;
    border-bottom-color: black;
    align-items: center;
+   cursor: pointer;
 }
 
 .user {
@@ -59,3 +60,37 @@ body {
  .venmo_amt {
     width: 33vw;
  }
+
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+ }
+
+ .modal-content {
+    width: 80%
+    display: flex;
+    flex-direction: column;
+ }
+
+ .btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .btn {
+    padding: 5%;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+ }
+
+ .title {
+    color: #3A7734;
+}

@@ -44,9 +44,28 @@ body {
 
 .label {
     width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 #form-amt, #form-comm, #form-loc, #form-select {
     margin: 1%;
+    height: 2vh;
+}
+@media (max-width: 768px) {
+    .offer-form {
+        width: 100vw;
+        border-style: none;
+    }
+    
 }
 
+.title {
+    color: #3A7734;
+}
+
+#form-submit {
+    padding: 2%;
+    border-radius: 8px;
+}

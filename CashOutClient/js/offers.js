@@ -17,9 +17,20 @@ $(document).ready(function () {
             }
         }
     })
-    $('.offer').each().click(function() {
+
+    $('.body').click(function (index) {
+        console.log("I made it 1")
         if (GetURLParameter('giving') == 'false') {
-            
+            console.log("i made it")
+            //$('.modal').css("display", "flex")
+            alert("Offer Accepted")
+            window.location.replace('./index.html')
+        }
+    })
+
+    $(document).click(function (event) {
+        if (event.target == $('.modal')) {
+            $('.modal').style.display = 'none'
         }
     })
 })
