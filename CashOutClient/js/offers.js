@@ -9,22 +9,21 @@ $(document).ready(function () {
 
             })
             $('.body').html(offersHTML)
+	    $('.offer').click(function (index) {
+		console.log("I made it 1")
+		if (GetURLParameter('giving') == 'false') {
+		    console.log("i made it")
+		    //$('.modal').css("display", "flex")
+		    alert("Offer Accepted")
+		    window.location.replace('./index.html')
+		}
+	    })
             if (GetURLParameter('giving') == 'true') {
                 $('.title').html('Here are some offers that are similar to yours....')
             }
             else {
                 $('.title').html('Here are all the available offers in the area...')
             }
-        }
-    })
-
-    $('.body').click(function (index) {
-        console.log("I made it 1")
-        if (GetURLParameter('giving') == 'false') {
-            console.log("i made it")
-            //$('.modal').css("display", "flex")
-            alert("Offer Accepted")
-            window.location.replace('./index.html')
         }
     })
 
