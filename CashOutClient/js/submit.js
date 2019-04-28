@@ -7,12 +7,18 @@ $(document).ready(function () {
         range = $('#form-select').val()
         offer = {'cash_amt': form_amt, 'venmo_amt': venmo_amt, 'range': range, 'user_id': 1}
         console.log(offer)
-        Request.POST(offer, 'api/offer', function (result) {
-            if (result.success == true) {
-                url = './offers.html?giving='+ GetURLParameter('giving')
-                window.location.replace(url)
-            }
-        })
+        if (GetURLParameter('giving') == 'true') {
+            Request.POST(offer, 'api/offer', function (result) {
+                if (result.success == true) {
+                    url = './offers.html?giving=' + GetURLParameter('giving')
+                    window.location.replace(url)
+                }
+            })
+        }
+        else {
+            url = './offers.html?giving=' + GetURLParameter('giving')
+            window.location.replace(url)
+        }
     })
 })
 

@@ -1,48 +1,61 @@
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: 'Roboto Slab', serif;
 
 }
 
 .header {
-    width: 100vw;
-    height: 7vh;
-    top: 0;
-    position: fixed;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+   width: 100vw;
+   height: 7vh;
+   top: 0;
+   position: fixed;
+   background-color: black;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
 }
 
 .header-img {
-    height: 6vh;
-    padding: .5vh .5vw .5vh .5vw;
+   height: 6vh;
+   padding: 1vh .5vw .5vh .5vw;
 }
 
 .body {
-    margin-top: 10vh;
-    font-size: 1.75em;
+   margin-top: 10vh;
+   font-size: 1.75em;
 }
 
 .offer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
-    border-bottom-style: solid;
-    border-bottom-color: black;
+   display: flex;
+   flex-direction: row;
+   width: 100vw;
+   border-bottom-style: solid;
+   border-bottom-color: black;
+   align-items: center;
 }
 
 .user {
-    display: flex;
-    flex-direction: row;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-right: 2vw;
+   align-items: center;
+   width: 33vw;
 }
 .user-img {
-    height: 10vh;
+   height: 10vh;
+   width: 8vw;
+   padding: .5vh .5vw .5vh .5vw;
 }
+ .cash_amt {
+    width: 33vw;
+ }
+
+ .venmo_amt {
+    width: 33vw;
+ }

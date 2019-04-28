@@ -1,8 +1,4 @@
-{{#if giving}}
-    <div class="title">Here are some offers similar to yours...</div>
-{{else}}
-    <div class="title">Here are all the available offers in the area...</div>
-{{/if}}
+<div class="title"></div>
 {{#each offers}}
     {{> offer offer=this}}
 {{/each}}
