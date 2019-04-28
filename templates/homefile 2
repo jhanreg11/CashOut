@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBm9JLBsDDWW27Wqn0kLl8AAqfmKxBTnWM",
+    authDomain: "cashout-b7ccb.firebaseapp.com",
+    databaseURL: "https://cashout-b7ccb.firebaseio.com",
+    projectId: "cashout-b7ccb",
+    storageBucket: "cashout-b7ccb.appspot.com",
+    messagingSenderId: "712867452373"
+  };
+  firebase.initializeApp(config);
+</script>
+  </head>
+  <body style="background-color:MediumSeaGreen;">
+   <center>
+    <h1 style="font-size:150%;"> Who are you? <h1>
+    <button >Giver</button>
+    
+    <button id='btn' onclick = "Taker()" style="font-size:100%;">Taker</button>
+    
+    <h2 style="font-size:150%;">Where are you?<h2>
+    <p style="font-size:150%;">  tell me your location<p> 
+    street: <input type="text" id="input" />
+    zip: <input type="text" id="input" />
+
+
+
+    <p id ="results"></p>
+    <script src="script.js"></script>
+    </center>
+  </body>
+</html>
