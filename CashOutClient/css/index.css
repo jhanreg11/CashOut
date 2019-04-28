@@ -1,0 +1,13 @@
+.header {
+    width: 100%;
+    height: 7vh;
+    top: 0;
+    position: fixed;
+    background-color: #11557C;
+    backgro
+}
+
+body {
+    background-clip: border-box;
+    overflow-x: hidden;
+}

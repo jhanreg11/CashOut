@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CashOut</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/css/submit.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.7/handlebars.js"></script>
+    <script type="text/javascript" src="/js/templates.js"></script>
+    <script type="text/javascript" src="/js/request.js"></script>
+    <script type="text/javascript" src="/js/submit.js"></script>
+</head>
+<body>
+<div class='header'>
+    <div class='title'>Cash Out</div>
+</div>
+<div class="body">
+    <div class="offer-form">
+        <legend>Create a New Offer:</legend>
+        <div class="form-item">
+            <div class="label">Amount:</div>
+            <input id="form-amt" required type="text">
+        </div>
+        <div class="form-item">
+            <div class="label">Commission ($):</div>
+            <input id="form-comm" required type="text">
+        </div>
+        <div class="form-item">
+            <div class="label">Location:</div>
+            <input id="form-loc">
+        </div>
+        <div class="form-item">Range:</div>
+        <select id="form-select" name="saleForm-item">
+            <option value="1">None</option>
+            <option value="1">1 Mile</option>
+            <option value="3">3 Miles</option>
+            <option value="10">10 Miles</option>
+        </select>
+        </fieldset>
+        <div class="btn">
+            <button id="form-submit" type="submit">Submit</button>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

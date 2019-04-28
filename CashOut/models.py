@@ -38,23 +38,26 @@ class Offer(db.Model):
     ### Location ###
     long = db.Column(db.Float(precision=4, asdecimal=True))
     lat = db.Column(db.Float(precision=4, asdecimal=True))
+    range = db.Column(db.Integer)
 
-    def add_offer(cash_amt, venmo_amt, long, lat, user_id):
-        new_offer = Offer(cash_amt=cash_amt, venmo_amt=venmo_amt, is_completed=False, long=long, lat=lat, user_id=user_id)
+    @staticmethod
+    def add_offer(cash_amt, venmo_amt, long, lat, user_id, range):
+        new_offer = Offer(cash_amt=cash_amt, venmo_amt=venmo_amt, is_completed=False, long=long, lat=lat, range=range, user_id=user_id)
         db.session.add(new_offer)
         db.session.commit()
         return new_offer
 
     def to_json(self):
         return {
-            'id': self.id,
-            'user_id': self.user.id,
-            'cash_amt': self.cash_amt,
-            'venmo_amt': self.venmo_amt,
-            'is_completed': self.is_completed,
+            'id': None if self.id == None else int(self.id),
+            'user_id': None if self.user.id == None else int(self.user.id),
+            'cash_amt': None if self.cash_amt == None else float(self.cash_amt),
+            'venmo_amt': None if self.venmo_amt == None else float(self.venmo_amt),
+            'is_completed': None if self.is_completed == None else self.is_completed,
+            'range': None if self.range == None else int(self.range),
             'location': {
-                'lat': self.lat,
-                'long': self.long
+                'lat': None if self.lat == None else float(self.lat),
+                'long': None if self.long == None else float(self.long)
             }
         }
 
