@@ -1,0 +1,435 @@
+[2019-04-28 10:38:19 +0000] [19426] [INFO] Starting gunicorn 19.9.0
+[2019-04-28 10:38:19 +0000] [19426] [INFO] Listening at: http://127.0.0.1:8000 (19426)
+[2019-04-28 10:38:19 +0000] [19426] [INFO] Using worker: sync
+[2019-04-28 10:38:19 +0000] [19429] [INFO] Booting worker with pid: 19429
+[2019-04-28 10:38:54 +0000] [19426] [INFO] Handling signal: term
+[2019-04-28 10:38:54 +0000] [19429] [INFO] Worker exiting (pid: 19429)
+[2019-04-28 10:38:55 +0000] [19426] [INFO] Shutting down: Master
+[2019-04-28 10:47:54 +0000] [19574] [INFO] Starting gunicorn 19.9.0
+[2019-04-28 10:47:54 +0000] [19574] [INFO] Listening at: http://127.0.0.1:8000 (19574)
+[2019-04-28 10:47:54 +0000] [19574] [INFO] Using worker: sync
+[2019-04-28 10:47:54 +0000] [19577] [INFO] Booting worker with pid: 19577
+[2019-04-28 10:51:34 +0000] [19574] [INFO] Handling signal: term
+[2019-04-28 10:51:34 +0000] [19577] [INFO] Worker exiting (pid: 19577)
+[2019-04-28 10:51:34 +0000] [19574] [INFO] Shutting down: Master
+[2019-04-28 10:52:14 +0000] [19676] [INFO] Starting gunicorn 19.9.0
+[2019-04-28 10:52:14 +0000] [19676] [INFO] Listening at: http://127.0.0.1:8000 (19676)
+[2019-04-28 10:52:14 +0000] [19676] [INFO] Using worker: sync
+[2019-04-28 10:52:14 +0000] [19679] [INFO] Booting worker with pid: 19679
+[2019-04-28 10:54:04 +0000] [19676] [INFO] Handling signal: term
+[2019-04-28 10:54:04 +0000] [19679] [INFO] Worker exiting (pid: 19679)
+[2019-04-28 10:54:04 +0000] [19676] [INFO] Shutting down: Master
+[2019-04-28 10:54:31 +0000] [19834] [INFO] Starting gunicorn 19.9.0
+[2019-04-28 10:54:31 +0000] [19834] [INFO] Listening at: http://127.0.0.1:8000 (19834)
+[2019-04-28 10:54:31 +0000] [19834] [INFO] Using worker: sync
+[2019-04-28 10:54:31 +0000] [19837] [INFO] Booting worker with pid: 19837
+[2019-04-28 10:56:30 +0000] [19834] [INFO] Handling signal: term
+[2019-04-28 10:56:30 +0000] [19837] [INFO] Worker exiting (pid: 19837)
+[2019-04-28 10:56:31 +0000] [19834] [INFO] Shutting down: Master
+[2019-04-28 10:56:52 +0000] [19887] [INFO] Starting gunicorn 19.9.0
+[2019-04-28 10:56:52 +0000] [19887] [INFO] Listening at: http://127.0.0.1:8000 (19887)
+[2019-04-28 10:56:52 +0000] [19887] [INFO] Using worker: sync
+[2019-04-28 10:56:52 +0000] [19890] [INFO] Booting worker with pid: 19890
+[2019-04-28 10:57:46 +0000] [19887] [INFO] Handling signal: term
+[2019-04-28 10:57:46 +0000] [19890] [INFO] Worker exiting (pid: 19890)
+[2019-04-28 10:57:46 +0000] [19887] [INFO] Shutting down: Master
+[2019-04-28 10:57:52 +0000] [19912] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: //srv/CashOut
+  daemon: True
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /srv/CashOut/cashout.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: CashOut:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f93f710d840>
+  on_reload: <function OnReload.on_reload at 0x7f93f710d950>
+  when_ready: <function WhenReady.when_ready at 0x7f93f710da60>
+  pre_fork: <function Prefork.pre_fork at 0x7f93f710db70>
+  post_fork: <function Postfork.post_fork at 0x7f93f710dc80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f93f710dd90>
+  worker_int: <function WorkerInt.worker_int at 0x7f93f710dea0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f93f6c17048>
+  pre_exec: <function PreExec.pre_exec at 0x7f93f6c17158>
+  pre_request: <function PreRequest.pre_request at 0x7f93f6c17268>
+  post_request: <function PostRequest.post_request at 0x7f93f6c172f0>
+  child_exit: <function ChildExit.child_exit at 0x7f93f6c17400>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f93f6c17510>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f93f6c17620>
+  on_exit: <function OnExit.on_exit at 0x7f93f6c17730>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-04-28 10:57:52 +0000] [19912] [INFO] Starting gunicorn 19.9.0
+[2019-04-28 10:57:52 +0000] [19912] [DEBUG] Arbiter booted
+[2019-04-28 10:57:52 +0000] [19912] [INFO] Listening at: http://127.0.0.1:8000 (19912)
+[2019-04-28 10:57:52 +0000] [19912] [INFO] Using worker: sync
+[2019-04-28 10:57:52 +0000] [19915] [INFO] Booting worker with pid: 19915
+[2019-04-28 10:57:52 +0000] [19912] [DEBUG] 1 workers
+[2019-04-28 10:57:57 +0000] [19915] [DEBUG] GET /health/check
+[2019-04-28 10:58:03 +0000] [19915] [DEBUG] GET /health/check
+[2019-04-28 10:58:14 +0000] [19915] [DEBUG] POST /sign
+[2019-04-28 10:58:21 +0000] [19915] [DEBUG] POST /sign-up
+[2019-04-28 11:00:35 +0000] [19915] [DEBUG] GET /health/check
+[2019-04-28 11:01:45 +0000] [19915] [DEBUG] POST /sign-up
+[2019-04-28 11:04:25 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 11:07:48 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 11:07:48 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 16:02:15 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 16:02:16 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 16:10:17 +0000] [19915] [DEBUG] GET /offer
+[2019-04-28 16:16:45 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 16:16:46 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 17:14:57 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 17:14:57 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 17:14:57 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 17:14:58 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 17:16:17 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 17:17:35 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 17:17:35 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 17:31:44 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 17:31:44,780] ERROR in app: Exception on /api/offer [POST]
+Traceback (most recent call last):
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1179, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 719, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/processors.py", line 109, in to_float
+    return float(value)
+ValueError: could not convert string to float: 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "//srv/CashOut/CashOut/controllers.py", line 38, in post_offer
+    if newOffer:
+  File "//srv/CashOut/CashOut/models.py", line 47, in add_offer
+    db.session.commit()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1179, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 719, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/processors.py", line 109, in to_float
+    return float(value)
+sqlalchemy.exc.StatementError: (builtins.ValueError) could not convert string to float: 
+[SQL: INSERT INTO offer (user_id, cash_amt, venmo_amt, is_completed, long, lat, range) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'is_completed': False, 'range': '1', 'cash_amt': '', 'venmo_amt': '', 'user_id': 1, 'long': None, 'lat': None}]]
+[2019-04-28 17:31:44 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 17:31:44,797] ERROR in app: Exception on /api/offer [POST]
+Traceback (most recent call last):
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1179, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 719, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/processors.py", line 109, in to_float
+    return float(value)
+ValueError: could not convert string to float: 
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "//srv/CashOut/CashOut/controllers.py", line 38, in post_offer
+    if newOffer:
+  File "//srv/CashOut/CashOut/models.py", line 47, in add_offer
+    db.session.commit()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 493, in commit
+    self._prepare_impl()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 472, in _prepare_impl
+    self.session.flush()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2451, in flush
+    self._flush(objects)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2589, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2549, in _flush
+    flush_context.execute()
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1120, in _emit_insert_statements
+    statement, params
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1182, in _execute_context
+    e, util.text_type(statement), parameters, None, None
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1179, in _execute_context
+    context = constructor(dialect, self, conn, *args)
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 719, in _init_compiled
+    param.append(processors[key](compiled_params[key]))
+  File "/srv/CashOut/venv/lib/python3.7/site-packages/sqlalchemy/processors.py", line 109, in to_float
+    return float(value)
+sqlalchemy.exc.StatementError: (builtins.ValueError) could not convert string to float: 
+[SQL: INSERT INTO offer (user_id, cash_amt, venmo_amt, is_completed, long, lat, range) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: [{'is_completed': False, 'range': '1', 'cash_amt': '', 'venmo_amt': '', 'user_id': 1, 'long': None, 'lat': None}]]
+[2019-04-28 17:55:55 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 17:55:55 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 17:58:12 +0000] [19915] [DEBUG] OPTIONS /api/offer
+[2019-04-28 17:58:12 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 17:58:13 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:00:21 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:00:26 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:00:26 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:00:55 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 18:00:55 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:03:47 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:13:57 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:16:27 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 18:16:28 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:17:27 +0000] [19915] [DEBUG] OPTIONS /api/offer
+[2019-04-28 18:17:27 +0000] [19915] [DEBUG] POST /api/offer
+[2019-04-28 18:17:28 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:17:47 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:18:03 +0000] [19915] [DEBUG] GET /api/offer
+[2019-04-28 18:35:32 +0000] [19912] [INFO] Handling signal: term
+[2019-04-28 18:35:32 +0000] [19915] [INFO] Worker exiting (pid: 19915)
+[2019-04-28 18:35:32 +0000] [19912] [INFO] Shutting down: Master
+[2019-04-28 18:38:58 +0000] [22711] [DEBUG] Current configuration:
+  config: None
+  bind: ['127.0.0.1:8000']
+  backlog: 2048
+  workers: 1
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /srv/CashOut
+  daemon: True
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /srv/CashOut/cashout.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: CashOut:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fa9ac7c3840>
+  on_reload: <function OnReload.on_reload at 0x7fa9ac7c3950>
+  when_ready: <function WhenReady.when_ready at 0x7fa9ac7c3a60>
+  pre_fork: <function Prefork.pre_fork at 0x7fa9ac7c3b70>
+  post_fork: <function Postfork.post_fork at 0x7fa9ac7c3c80>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fa9ac7c3d90>
+  worker_int: <function WorkerInt.worker_int at 0x7fa9ac7c3ea0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fa9ac2cd048>
+  pre_exec: <function PreExec.pre_exec at 0x7fa9ac2cd158>
+  pre_request: <function PreRequest.pre_request at 0x7fa9ac2cd268>
+  post_request: <function PostRequest.post_request at 0x7fa9ac2cd2f0>
+  child_exit: <function ChildExit.child_exit at 0x7fa9ac2cd400>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fa9ac2cd510>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fa9ac2cd620>
+  on_exit: <function OnExit.on_exit at 0x7fa9ac2cd730>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2019-04-28 18:38:58 +0000] [22711] [INFO] Starting gunicorn 19.9.0
+[2019-04-28 18:38:58 +0000] [22711] [DEBUG] Arbiter booted
+[2019-04-28 18:38:58 +0000] [22711] [INFO] Listening at: http://127.0.0.1:8000 (22711)
+[2019-04-28 18:38:58 +0000] [22711] [INFO] Using worker: sync
+[2019-04-28 18:38:58 +0000] [22714] [INFO] Booting worker with pid: 22714
+[2019-04-28 18:38:58 +0000] [22711] [DEBUG] 1 workers
+[2019-04-28 18:49:21 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 18:51:08 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 18:55:25 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 18:56:01 +0000] [22714] [DEBUG] POST /api/offer
+[2019-04-28 18:56:01 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 18:56:56 +0000] [22714] [DEBUG] POST /api/offer
+[2019-04-28 18:56:56 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 18:58:11 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 18:59:28 +0000] [22714] [DEBUG] POST /api/offer
+[2019-04-28 18:59:28 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 18:59:56 +0000] [22714] [DEBUG] POST /api/offer
+[2019-04-28 18:59:56 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 19:00:01 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 19:01:47 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 19:04:50 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 19:04:52 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 19:04:56 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 19:05:34 +0000] [22714] [DEBUG] GET /api/offer
+[2019-04-28 19:05:49 +0000] [22714] [DEBUG] GET /api/offer

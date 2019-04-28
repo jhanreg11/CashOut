@@ -1,0 +1,1 @@
+/srv/CashOut/venv/bin/gunicorn CashOut:app -D --log-file /srv/CashOut/cashout.log --log-level debug

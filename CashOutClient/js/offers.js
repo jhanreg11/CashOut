@@ -10,7 +10,6 @@ $(document).ready(function () {
             })
             $('.body').html(offersHTML)
 	    $('.offer').click(function (index) {
-		console.log("I made it 1")
 		if (GetURLParameter('giving') == 'false') {
 		    console.log("i made it")
 		    //$('.modal').css("display", "flex")
