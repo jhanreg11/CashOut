@@ -1,3 +1,4 @@
+//TODO giving users add record while taking users don't
 Request = new Request();
 $(document).ready(function () {
     $('#form-submit').click(function() {
@@ -8,8 +9,23 @@ $(document).ready(function () {
         console.log(offer)
         Request.POST(offer, 'api/offer', function (result) {
             if (result.success == true) {
-                window.location.replace('/offers.html')
+                url = './offers.html?giving='+ GetURLParameter('giving')
+                window.location.replace(url)
             }
         })
     })
 })
+
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }
+    }
+}

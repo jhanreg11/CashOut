@@ -4,7 +4,9 @@ $(document).ready(function () {
     Request.GET('api/offer', function (response) {
         if (response) {
             offersHTML = Handlebars.templates['offers']({
-                'offers': response.offers
+                'offers': response.offers,
+                'giving': true
+
             })
             $('.body').html(offersHTML)
 
