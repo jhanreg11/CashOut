@@ -1,6 +1,6 @@
 Request = function() {
     var that = Object.create(Request.prototype);
-    var BASE_URL = 'http://localhost:5000/';
+    var BASE_URL = 'https://jacob-hanson.com/cashout/api/';
 
     that.POST = function(req, path, completion) {
         $.ajax(BASE_URL + path, {
