@@ -2,6 +2,10 @@ from CashOut import app, db
 from flask import request, jsonify
 from CashOut.models import *
 
+@app.route('/health/check')
+def health_check():
+    return 'I am alive'
+
 @app.route('/sign-up', methods=['POST'])
 def post_user():
     data  = request.get_json(force=True)
