@@ -30,16 +30,23 @@ body {
     font-size: 1.75em;
 }
 
-.intro {
-    font-size: 2em;
-}
-
-.select-button {
-    padding: 1%;
-    margin: 2%;
+.offer-form {
     border-style: solid;
     border-radius: 5px;
-    background-color: lightgrey;
-    cursor: pointer;
+    width: 50vw;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.label {
+    width: 40%;
+}
+
+#form-amt, #form-comm, #form-loc, #form-select {
+    margin: 1%;
 }
 
