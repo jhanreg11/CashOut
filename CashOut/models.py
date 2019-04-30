@@ -22,6 +22,25 @@ class User(db.Model):
             'offers': [offer.id for offer in self.offers]
         }
 
+
+from math import radians, cos, sin, asin, sqrt
+
+def haversine(lon1, lat1, lon2, lat2):
+    """
+    Calculate the great circle distance between two points
+    on the earth (specified in decimal degrees)
+    """
+    # convert decimal degrees to radians
+    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
+
+    # haversine formula
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a))
+    r = 6371 # Radius of earth in kilometers. Use 3956 for miles
+    return c * r
+
 class Offer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
@@ -60,4 +79,12 @@ class Offer(db.Model):
                 'long': None if self.long == None else float(self.long)
             }
         }
-
+    def getNearest(self, dist):
+        list = Offer.query.all()
+        i = 0
+        for x in list:
+            if haversine(x.long, x.lat, self.long, self.lat) > dist:
+                del list[i]
+            else:
+                i+=1
+        return list

@@ -15,19 +15,18 @@ def post_user():
     else:
         return jsonify({'success': False})
 
-@app.route
 @app.route('/api/offer', methods=['GET'])
 def get_offer():
     list = []
     offers = Offer.query.all()
+
+    dist = request.args['dist']
+    offer = Offer.query.filter_by(id=request.args['offer_id']).first()
+    if dist and offer:
+        offers = offer.getNearest(dist=dist)
+
     for x in offers:
-        print(x.user)
-    for x in offers:
-        print (str(x))
         list.append(x.to_json())
-
-
-    print(list)
     return jsonify({'offers': list})
 
 @app.route('/api/offer', methods=['POST'])
