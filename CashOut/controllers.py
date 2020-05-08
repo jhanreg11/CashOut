@@ -15,12 +15,14 @@ def post_user():
     else:
         return jsonify({'success': False})
 
-@app.route('/api/offer', methods=['GET'])
+@app.route('/offer', methods=['GET'])
 def get_offer():
     list = []
     offers = Offer.query.all()
 
-    dist = request.args['dist']
+    # distance (meters)
+    dist = float(request.args['dist'])
+    # offer to be compared to
     offer = Offer.query.filter_by(id=request.args['offer_id']).first()
     if dist and offer:
         offers = offer.getNearest(dist=dist)
@@ -29,7 +31,7 @@ def get_offer():
         list.append(x.to_json())
     return jsonify({'offers': list})
 
-@app.route('/api/offer', methods=['POST'])
+@app.route('/offer', methods=['POST'])
 def post_offer():
     data = request.get_json(force=True)
     print (data)
@@ -38,4 +40,3 @@ def post_offer():
         return jsonify({'success': True})
     else:
         return jsonify({'success': False})
-

@@ -13,6 +13,9 @@ $(document).ready(function () {
                     url = './offers.html?giving=' + GetURLParameter('giving')
                     window.location.replace(url)
                 }
+                else {
+                    alert("Uh Oh:( Something was wrong with your offer submission. Please try again")
+                }
             })
         }
         else {
